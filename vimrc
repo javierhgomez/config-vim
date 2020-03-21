@@ -47,13 +47,13 @@ colorscheme gruvbox
 let g:airline_theme='gruvbox'
 " Muestra saltos de linea, tabulación y espacios
 set listchars+=eol:¬,tab:---,space:.
-set list
+"set list
 nnoremap <F2> :set list! list? <CR>
 " Controla la ortografía
-set spelllang=es
+set spelllang=en,es
 set encoding=utf-8 nobomb
 set complete+=kspell
-set spell
+"set spell
 nnoremap <F4> :set spell! spell? <CR>
 " Cambia la tabulación por tipo de archivo
 autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
