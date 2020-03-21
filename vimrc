@@ -55,3 +55,8 @@ set encoding=utf-8 nobomb
 set complete+=kspell
 set spell
 nnoremap <F4> :set spell! spell? <CR>
+" Cambia la tabulación por tipo de archivo
+autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType css setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType json setlocal shiftwidth=2 softtabstop=2 expandtab
