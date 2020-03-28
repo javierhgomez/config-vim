@@ -19,6 +19,6 @@
 [submodule "pack/plugins/start/vim-autoformat"]
 	path = pack/plugins/start/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
-[submodule "pack/plugins/start/vim-coloresque"]
-	path = pack/plugins/start/vim-coloresque
-	url = https://github.com/gko/vim-coloresque.git
+[submodule "pack/plugins/start/colorizer"]
+	path = pack/plugins/start/colorizer
+	url = https://github.com/lilydjwg/colorizer.git
