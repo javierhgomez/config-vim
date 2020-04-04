@@ -60,3 +60,16 @@ autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType css setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType json setlocal shiftwidth=2 softtabstop=2 expandtab
+" Aplica o quita sangría con la tecla Tab
+nnoremap <Tab> >>
+nnoremap <S-Tab> <<
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+inoremap <S-Tab> <C-D>
+" Mueve lineas
+nnoremap <A-DOWN> :m .+1<CR>==
+nnoremap <A-UP> :m .-2<CR>==
+inoremap <A-DOWN> <Esc>:m .+1<CR>==gi
+inoremap <A-UP> <Esc>:m .-2<CR>==gi
+vnoremap <A-DOWN> :m '>+1<CR>gv=gv
+vnoremap <A-UP> :m '<-2<CR>gv=gv
