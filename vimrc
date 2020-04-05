@@ -53,8 +53,10 @@ nnoremap <F2> :set list! list? <CR>
 set spelllang=en,es
 set encoding=utf-8 nobomb
 set complete+=kspell
-"set spell
-nnoremap <F4> :set spell! spell? <CR>
+" set spell
+nnoremap <F3> :set spell! spell? <CR>
+" Marca ortografía para archivos markdown
+autocmd FileType markdown setlocal spell spelllang=es
 " Cambia la tabulación por tipo de archivo
 autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 expandtab
